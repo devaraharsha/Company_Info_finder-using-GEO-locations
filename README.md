@@ -1,8 +1,8 @@
-Operations Manager Finder
-A Flask web app that lets you enter latitude and longitude, finds the nearest company using the Google Places API, and fetches the Operations Manager’s contact details (name, LinkedIn, email, phone) using the RocketReach API.
+**Operations Manager Finder
+A Flask web app that lets you enter latitude and longitude, finds the nearest company using the Google Places API, and fetches the Operations Manager’s contact details (name, LinkedIn, email, phone) using the RocketReach API.**
 
-Features
-Search by Latitude/Longitude:
+**Features
+Search by Latitude/Longitude:**
 Input a location to get the nearest company's details and live contacts.
 
 Automatic Company Identification:
@@ -27,9 +27,9 @@ Install & Run
 Clone this repo:
 
 bash
-git clone https://github.com/YOUR_USERNAME/operations-manager-finder.git
-cd operations-manager-finder
-Install Python dependencies:
+git clone https://github.com/devaraharsha/Company_Info_finder-using-GEO-locations/tree/master
+**
+Install Python dependencies:**
 
 bash
 pip install flask requests rocketreach
@@ -41,10 +41,10 @@ GOOGLE_API_KEY = "YOUR_GOOGLE_API_KEY"
 ROCKETREACH_API_KEY = "YOUR_ROCKETREACH_API_KEY"
 Run the server:
 
-bash
+**bash
 python app.py
 In your browser:
-Go to http://127.0.0.1:5000, input lat/lon, and click Search.
+Go to http://127.0.0.1:5000, input lat/lon, and click Search.**
 
 
 Usage Notes
@@ -54,9 +54,9 @@ If you see N/A for some fields, try searching for another company or branch.
 
 Export your results easily with the CSV download button.
 
-Tech
+**Tech
 Flask
 
 Google Places API
 
-RocketReach API
+RocketReach API**
