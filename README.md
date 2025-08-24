@@ -1,62 +1,77 @@
-**Operations Manager Finder
-A Flask web app that lets you enter latitude and longitude, finds the nearest company using the Google Places API, and fetches the Operations Manager’s contact details (name, LinkedIn, email, phone) using the RocketReach API.**
+📍 Operations Manager Finder
 
-**Features
-Search by Latitude/Longitude:**
-Input a location to get the nearest company's details and live contacts.
+A Flask web application that lets you enter latitude and longitude, finds the nearest company using the Google Places API, and fetches the Operations Manager’s contact details (name, LinkedIn, email, phone) using the RocketReach API.
 
-Automatic Company Identification:
-Uses Google Places to auto-identify offices/businesses near any coordinates.
+✨ Features
 
-Contact Lookup:
-Uses RocketReach to find Operations Manager (or similar) for the detected company.
+🔎 Search by Latitude/Longitude
+Enter coordinates to get the nearest company’s details and live contacts.
 
-Clean Results:
-See manager’s name, title, LinkedIn profile, email(s), and phone(s) (when available).
+🏢 Automatic Company Identification
+Uses Google Places to auto-detect businesses/offices near any location.
 
-CSV Export:
-Download your result history for analysis.
+👤 Contact Lookup
+Finds Operations Manager (or similar roles) for the detected company using RocketReach.
 
-Modern UI:
+📑 Clean Results
+Displays manager’s name, title, LinkedIn profile, email(s), and phone(s) (if available).
+
+📂 CSV Export
+Download your search history for further analysis.
+
+💻 Modern UI
 Responsive, mobile-friendly, and easy to use.
 
-Screenshots
-(Insert screenshots of your app showing input form and result. Example:)
+📸 Screenshots
 
-Install & Run
-Clone this repo:
+(Add screenshots of your app here. Example:)
 
-bash
-git clone https://github.com/devaraharsha/Company_Info_finder-using-GEO-locations/tree/master
-**
-Install Python dependencies:**
+Input Form
 
-bash
+
+Results Page
+
+
+🚀 Installation & Run
+1. Clone the repository
+git clone https://github.com/devaraharsha/Company_Info_finder-using-GEO-locations.git
+cd Company_Info_finder-using-GEO-locations
+
+2. Install dependencies
 pip install flask requests rocketreach
-Update API keys
-Open your main .py file and set:
 
-python
+3. Update API Keys
+
+Open your app.py file and replace with your keys:
+
 GOOGLE_API_KEY = "YOUR_GOOGLE_API_KEY"
 ROCKETREACH_API_KEY = "YOUR_ROCKETREACH_API_KEY"
-Run the server:
 
-**bash
+4. Run the server
 python app.py
-In your browser:
-Go to http://127.0.0.1:5000, input lat/lon, and click Search.**
 
+5. Open in browser
 
-Usage Notes
-Only public info available in RocketReach will be returned for Operations Managers.
+Visit:
+👉 http://127.0.0.1:5000
 
-If you see N/A for some fields, try searching for another company or branch.
+Enter latitude and longitude, then click Search.
 
-Export your results easily with the CSV download button.
+📘 Usage Notes
 
-**Tech
+Only public info available in RocketReach will be returned.
+
+If you see N/A for some fields, try another company or location.
+
+Use the CSV Export button to save your results.
+
+🛠️ Tech Stack
+
 Flask
+ – Web Framework
 
 Google Places API
+ – Company lookup
 
-RocketReach API**
+RocketReach API
+ – Contact details
